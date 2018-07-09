@@ -2,6 +2,8 @@
 import React from 'react'
 import { render } from 'react-dom'
 import { Provider } from 'react-redux'
+import getBoard from './getBoard'
+import getPlayer from './getPlayer'
 
 import { App } from './components'
 import { configureStore } from './state'
@@ -16,3 +18,4 @@ render(
   document.getElementById('root')
 )
 registerServiceWorker()
+export { getBoard, getPlayer }
